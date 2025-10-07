@@ -19,7 +19,7 @@ function App() {
 
   const generatePassword = useCallback(() => {
     let pass = "";
-    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.";
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzअआइईउऊऋएऐओऔअंअःॲऑकखगघङचछजझञटठडढणतथदधनपफबभमयलरवशषसहळक्षज्ञ";
     if (numberAllowed) str += "1234567890";
     if (charAllowed) str += "!@#$%^&*()_+";
 
