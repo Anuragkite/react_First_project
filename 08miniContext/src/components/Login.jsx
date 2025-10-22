@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import UserContext from "../Context/UserContext";
 
 function Login() {
-    const [userName, setuserName] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
     const { setUser } = useContext(UserContext)
@@ -10,8 +10,11 @@ function Login() {
     const handleSubmit = (e) => {
         // prevent page from refreshing
         e.preventDefault();
-        setUser({ userName, password })
+        username:'...'
+        setUser({ username, password })
     };
+
+    
 
     return (
         <div className="flex justify-between flex-col">
@@ -20,8 +23,8 @@ function Login() {
                 className="w-52 text-3xl border-3 border-blue-500 rounded-md bg-pink-300 font-bold  shadow-2xl mb-1.5"
                 type="text"
                 placeholder="UserName"
-                value={userName}
-                onChange={(e) => setuserName(e.target.value)}
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
             ></input>
             <input
                 className="w-52 border-3 border-blue-500 rounded-md bg-pink-300 font-bold  shadow-2xl mb-1.5"
