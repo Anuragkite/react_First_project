@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Usercontext = React.createContext();
+const Usercontext = React.createContext();//creation of emptyBox
 
 
 export default Usercontext;
